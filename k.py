@@ -76,7 +76,7 @@ settings = {
     "pnharfbot": {},
     "pname": {},
     "pro_name": {},
-    "message":"บัญชีนี้ได้การป้องกันโดย ༺ πနးຫຮี่のีধ์ ༻ ระบบได้ทำการบล็อคคุณอัตโนมัติ",
+    "message":"บัญชีนี้ได้การป้องกันโดย ༺ CaRa_Y ༻ ระบบได้ทำการบล็อคคุณอัตโนมัติ",
     "comment":"ขอบคุณที่แอดมา",
     "userAgent": [
         "Mozilla/5.0 (X11; U; Linux i586; de; rv:5.0) Gecko/20100101 Firefox/5.0",
@@ -228,7 +228,7 @@ def sendMessageWithMention(to, lineMID):
         logError(error)
  
 def myhelp():
-    myHelp = "____ ༺ πနးຫຮี่のีধ์ ༻ _____ " + "\n" \
+    myHelp = "____ ༺ CaRa_Y ༻ _____ " + "\n" \
                   "°•About" + "\n" + \
                   "°•คำสั่งโซเชียล" + "\n" + \
                   "°•คำสั่งคิก" + "\n" + \
@@ -260,7 +260,7 @@ def myhelp():
                   "°•Cbroadcastvoice" + "\n" + \
                   "°•รีบอท" + "\n" + \
                   "°•เชคออน์" + "\n" + \
-                  "______༺ πနးຫຮี่のีধ์ ༻_____"
+                  "______༺ CaRa_Y ༻_____"
     return myHelp
 
 def listgrup():
@@ -683,14 +683,14 @@ def lineBot(op):
                         grouplist = line.getGroupIdsJoined()
                         contactlist = line.getAllContactIds()
                         blockedlist = line.getBlockedContactIds()
-                        ret_ = "╔══[ ✯༺ πနးຫຮี่のีধ์ ༻ ]"
+                        ret_ = "╔══[ ✯༺ CaRa_Y ༻ ]"
                         ret_ += "\n╠۝ ชื่อ ═ {}".format(contact.displayName)
                         ret_ += "\n╠۝ กลุ่ม ═ {}".format(str(len(grouplist)))
                         ret_ += "\n╠۝ เพื่อน ═ {}".format(str(len(contactlist)))
                         ret_ += "\n╠۝ บล็อค ═ {}".format(str(len(blockedlist)))
                         ret_ += "\n╠══[สถานะ]"
                         ret_ += "\n╠۝ ผู้สร้าง ═ {}".format(creator.displayName)
-                        ret_ += "\n╚══[ ✯༺ πနးຫຮี่のีধ์ ༻✯ ]"
+                        ret_ += "\n╚══[ ✯༺ CaRa_Y ༻✯ ]"
                         line.sendContact(to, owner)
                         line.sendMessage(to, str(ret_))
                     except Exception as e:
@@ -3546,7 +3546,7 @@ def lineBot(op):
                          if settings['detectMention'] == True:
                              contact = line.getContact(msg._from)
                              cName = contact.displayName
-                             balas = ["『 ตอบอัตโนมัติ 』\n " + cName + "\n『แทคงี้ชอบเค้าหรา』"]
+                             balas = ["『 ตอบอัตโนมัติ 』\n " + cName + "\n『แทคนี้คิดถึงเราเหรอเขิล』"]
                              ret_ = "" + random.choice(balas)
                              name = re.findall(r'@(\w+)', msg.text)
                              mention = ast.literal_eval(msg.contentMetadata["MENTION"])
